@@ -1,6 +1,8 @@
 public class Main {
     public static void main(String[] args) {
         task1();
+        task3();
+
     }
         public static void task1 () {
             System.out.println("task 1");
@@ -17,4 +19,14 @@ public class Main {
             float j = 305.567F;
             System.out.println("Значение переменной j с типом float равно " + j);
         }
+    public static void task3 () {
+        System.out.println("task 3");
+        int lp = 23;
+        int as = 27;
+        int ea = 30;
+        int totalP = 480;
+        int students = ea+as+lp;
+        int paper = totalP / students;
+        System.out.println("На каждого ученика рассчитано " + paper + " листов бумаги");
+    }
     }
