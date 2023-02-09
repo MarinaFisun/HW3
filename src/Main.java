@@ -3,6 +3,7 @@ public class Main {
         task1();
         task2();
         task3();
+        task4();
 
     }
         public static void task1 () {
@@ -36,6 +37,7 @@ public class Main {
         System.out.println(f);
         byte j = 67;
         System.out.println(j);
+
     }
     public static void task3 () {
         System.out.println("task 3");
@@ -47,5 +49,21 @@ public class Main {
         int paper = totalP / students;
         System.out.println("На каждого ученика рассчитано " + paper + " листов бумаги");
     }
+
+    public static void task4 () {
+        byte productivityTwoMin = 16;
+        int productivityMin = productivityTwoMin / 2;
+        System.out.println("Продуктивность машины за 1 минуту = "+ productivityMin );
+        int twentyMin = productivityMin * 20;
+        System.out.println("За 20 минут машина произвела " + twentyMin + " штук бутылок");
+        int productivityOneDay = productivityMin * 1440;
+        System.out.println("За сутки машина произвела " + productivityOneDay+ " штук бутылок");
+        int productivity3Days = productivityOneDay * 3;
+        System.out.println("За 3 суток машина произвела " + productivity3Days+ " штук бутылок");
+        int productivityMonth = productivityOneDay * 31;
+        System.out.println("За 1 месяц (31 день) машина произвела " + productivityMonth + " штук бутылок");
+
+    }
+
     
     }
