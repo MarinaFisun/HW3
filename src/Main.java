@@ -1,5 +1,7 @@
 import com.sun.source.tree.SynchronizedTree;
 
+import java.util.concurrent.SynchronousQueue;
+
 public class Main {
     public static void main(String[] args) {
         task1();
@@ -8,6 +10,7 @@ public class Main {
         task4();
         task5();
         task6();
+        task7();
 
     }
         public static void task1 () {
@@ -97,6 +100,17 @@ public class Main {
         double kg = 1000;
         double breakfastWeightKg = breakfastWeightGr / kg;
         System.out.println("Вес спортзавтрака в килограммах равен " + breakfastWeightKg + " кг");
+    }
+    public static void task7 () {
+        System.out.println("task 7");
+    byte needToLose = 7;
+    int needToLoseGr = needToLose * 1000;
+    int if500Daily = needToLoseGr / 500;
+    System.out.println(if500Daily + " дней потребуется спортсмену, если он будет терять по 500 гр в день");
+    int if250Daily = needToLoseGr / 250;
+    System.out.println(if250Daily + " дней потребуется спортсмену, если он будет терять по 250 гр в день");
+    int average = (if250Daily + if500Daily) / 2;
+    System.out.println(average + " день может понадобиться спортсмену в среднем");
     }
 
     }
