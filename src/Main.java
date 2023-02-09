@@ -1,6 +1,7 @@
 public class Main {
     public static void main(String[] args) {
         task1();
+        task2();
         task3();
 
     }
@@ -19,6 +20,23 @@ public class Main {
             float j = 305.567F;
             System.out.println("Значение переменной j с типом float равно " + j);
         }
+    public static void task2 () {
+        System.out.println("task 2");
+        double a = 27.12;
+        System.out.println(a);
+        long b = 987678965549L;
+        System.out.println(b);
+        double c = 2.786;
+        System.out.println(c);
+        int d = 569;
+        System.out.println(d);
+        short e = -159;
+        System.out.println(e);
+        short f = 27897;
+        System.out.println(f);
+        byte j = 67;
+        System.out.println(j);
+    }
     public static void task3 () {
         System.out.println("task 3");
         int lp = 23;
@@ -29,4 +47,5 @@ public class Main {
         int paper = totalP / students;
         System.out.println("На каждого ученика рассчитано " + paper + " листов бумаги");
     }
+    
     }
