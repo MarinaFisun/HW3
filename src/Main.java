@@ -1,6 +1,3 @@
-import com.sun.source.tree.SynchronizedTree;
-
-import java.util.concurrent.SynchronousQueue;
 
 public class Main {
     public static void main(String[] args) {
@@ -11,6 +8,7 @@ public class Main {
         task5();
         task6();
         task7();
+        task8();
 
     }
         public static void task1 () {
@@ -112,5 +110,34 @@ public class Main {
     int average = (if250Daily + if500Daily) / 2;
     System.out.println(average + " день может понадобиться спортсмену в среднем");
     }
+    public static void task8 () {
+        System.out.println("task 8");
 
+        int oldSalaryM = 67760;
+        long increaseM = oldSalaryM / 10;
+        long newSalaryM = oldSalaryM + increaseM;
+        long oldRevenueM = oldSalaryM * 12;
+        long newRevenueM = newSalaryM * 12;
+        long differenceM = newRevenueM - oldRevenueM;
+
+        System.out.println("Маша теперь получает " + newSalaryM + " рублей. Годовой доход вырос на " + differenceM + " рублей");
+
+        int oldSalaryD = 83690;
+        long increaseD = oldSalaryD / 10;
+        long newSalaryD = oldSalaryD + increaseD;
+        long oldRevenueD = oldSalaryD * 12;
+        long newRevenueD = newSalaryD * 12;
+        long differenceD = newRevenueD - oldRevenueD;
+
+        System.out.println("Денис теперь получает " + newSalaryD + " рублей. Годовой доход вырос на " + differenceD + " рублей");
+
+        int oldSalaryK = 76230;
+        long increaseK = oldSalaryK / 10;
+        long newSalaryK = oldSalaryK + increaseK;
+        long oldRevenueK = oldSalaryK * 12;
+        long newRevenueK = newSalaryK * 12;
+        long differenceK = newRevenueK - oldRevenueK;
+
+        System.out.println("Кристина теперь получает " + newSalaryK + " рублей. Годовой доход вырос на " + differenceK + " рублей");
+    }
     }
