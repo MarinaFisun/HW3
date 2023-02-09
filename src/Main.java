@@ -1,3 +1,5 @@
+import com.sun.source.tree.SynchronizedTree;
+
 public class Main {
     public static void main(String[] args) {
         task1();
@@ -5,6 +7,7 @@ public class Main {
         task3();
         task4();
         task5();
+        task6();
 
     }
         public static void task1 () {
@@ -78,7 +81,22 @@ public class Main {
         int totalBrown = brownForOne*roomsInSchool;
         int totalWhite = whiteForOne*roomsInSchool;
         System.out.println("В школе, где " +roomsInSchool+ " классов, нужно " + totalWhite +" банок белой краски и "+ totalBrown +" банок коричневой краски.");
-
     }
-    
+    public static void task6 () {
+        System.out.println("task 6");
+        short banana = 80;
+        int bananasForBr = banana * 5;
+        short milk = 105;
+        int milkForBr = milk * 2;
+        short iceCream = 100;
+        int iceCreamForBr = iceCream * 2;
+        short egg = 70;
+        int eggsForBr = 70 * 4;
+        int breakfastWeightGr = bananasForBr + milkForBr + iceCreamForBr + eggsForBr;
+        System.out.println("Вес спортзавтрака в граммах равен " + breakfastWeightGr + " гр");
+        double kg = 1000;
+        double breakfastWeightKg = breakfastWeightGr / kg;
+        System.out.println("Вес спортзавтрака в килограммах равен " + breakfastWeightKg + " кг");
+    }
+
     }
